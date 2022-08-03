@@ -1,0 +1,38 @@
+.footer
+{
+    &__grid__hijo
+    {
+        @include set_flex(x,space-around);
+        align-items: center;
+        background-color: $quaternary-color;
+        color: $text-color;
+        padding-bottom: 1em;
+        padding-top: 1em;
+    }
+    &__redes
+    {
+        img
+        {
+            width: 4em;
+            height: 4em;
+            border-bottom-width: 4em /2;
+            border-color: #353535;
+            border-radius: 4em;
+            margin: 0.3em;
+        }
+        text-align: center;
+        font-size: 1em;
+        padding: 1em;
+    }
+    &__datos
+    {
+        font-size: 1em;
+        padding: 1em / 2;
+    }
+}
+.gmap_canvas
+{
+    border-radius: 1em;
+    border-color: $primary-color;
+    border-style: solid;
+}

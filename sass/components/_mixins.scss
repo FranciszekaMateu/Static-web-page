@@ -1,0 +1,26 @@
+@mixin y_margin($mtop,$mbot)
+{
+    margin-top: $mtop;
+    margin-bottom: $mbot;
+}
+@mixin set_flex($direction,$pos)
+{
+    display: flex;
+    flex-wrap: wrap;
+    @if $direction == x
+    {
+        flex-direction: row;
+        justify-content: $pos;
+    }
+    @else
+    {
+        align-items: $pos;
+        flex-direction: column;
+    }
+}
+@mixin set_back
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

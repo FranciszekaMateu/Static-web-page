@@ -1,0 +1,275 @@
+.body__grid__padre
+{
+    background-color: $background_gr;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    &__instalaciones
+    {
+        background-color: $primary-color;
+        display: grid;
+        grid-template-rows: auto auto auto;
+    }
+    &__contacto
+    {
+        background-color: $terciary_color;
+        display: grid;
+        grid-template-rows: auto auto auto;
+    }
+    &__aboutus
+    {
+        display: grid;
+        display: auto auto auto;
+    }
+    &__contacto
+    {
+        background-color: $terciary_color;
+        display: grid;
+        grid-template-rows: auto auto auto;
+    }
+    &__aboutus
+    {
+        display: grid;
+        display: auto auto auto;
+    }
+}
+.main
+{
+    &__grid__hijo
+    {
+        @include set_flex(y,center);
+        justify-content: center;
+        background: $background_gr;
+    }
+    &__presentacion
+    {
+        @include set_flex(x,flex-start);
+        align-items: center;
+        color: $text-color;
+        height: 35em;
+        width: 100%;
+        background-image: url(https://images.pexels.com/photos/123335/pexels-photo-123335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        @include set_back;
+        border-bottom: 1em;
+        border-color: $secundary-color;
+        border-style: solid;
+        h2 
+        {
+            color: $primary-color ;
+            padding: 0.5em;
+            font-weight: 600;
+            box-shadow: 25px 15px 33px 0px rgba(0,0,0,0.75);
+        }
+    }
+    &__article
+    {
+        color: $text-color;
+        @include set_flex(y,center);
+        width: 100%;
+        h2
+        {
+            text-shadow: 8px 8px black;
+            padding: 0.5em;
+        }
+    
+    }
+    &__vid
+    {
+        width: 100%;
+        @include set_flex(x,space-around);
+        width: 100%;
+        &__iframe1
+        {
+            width: 40%;
+            border-radius: 10px 10px 10px 104px;
+            border: 1px solid $text-color;
+        }
+        &__iframe2
+        {
+            border-radius: 10px 10px 104px 10px;
+            border: 1px solid $text-color;
+            width: 40%;
+        }
+    }    
+    &__grid__hijo__instalaciones
+    {
+        background: rgb(42,43,42);
+        background: $background_gr;
+        text-align: center;
+        padding-bottom: 1em;
+        h2
+        {
+            color: $text-color;
+            padding: 1em;
+        }
+    }
+    &__servicios
+    {
+        padding: 2em;
+        background: $background_gr;
+    }
+    &__planes
+    {
+        @include set_flex(y,center);
+        padding-left: 0;
+        ul
+        {
+            border-radius: 98px 98px 200px 200px;
+            border: 0px solid #000000;
+            animation: presentacion 4s;
+            padding: 1em;
+            @include y_margin(1em,1em);
+            background-color: $terciary_color;
+            text-align: center;
+            line-height: 2em;
+            color: $text-color;
+            font-weight: 600;
+            font-size: 1.2em;
+            &:hover
+            {
+                zoom: 110%;
+                background-color: $secundary-color;
+                color: black;
+            }
+        }
+    }
+    &__servicios
+    {
+        h2
+        {
+            font-size: 4em;
+            text-align: center;
+            color: $text-color;
+            text-shadow: 8px 8px black;
+        }
+        h3
+        {
+            font-weight: 900;
+            color: $text-color;
+            text-align: center;
+            border-radius: 0.5em;
+            border-color: $primary-color;
+            border-style: double;
+            background-color: $quaternary-color;
+            height: 2em;
+            width: 100%;
+        }
+    }
+    &__contacto
+    {
+        color: $text-color;
+        background: $background_gr;
+    }
+    &__aboutus
+    {
+        background: $background_gr;
+        &__articulo
+        {
+            animation: presentacion 3s;
+            h2
+            {
+                display: block;
+                text-align: center;
+                padding-top: 4em;
+                color: $text-color;
+                font-size: 3em;
+            }
+            p
+            {
+                display: block;
+                padding: 5em;
+                padding-top: 13em;
+                font-size: 1.5em;
+                text-align: center;
+                font-family: 'Oswald', sans-serif;
+                transition: all 2s;
+                color: $text-color;
+                margin-bottom: 0;
+                &:hover
+                {
+                    font-size: 1.7em;
+                }
+            }
+            
+        }
+    }
+
+}
+.formulario
+{
+    text-align: center;
+    display: block;
+    &__texto
+    {
+        box-shadow: 43px 10px 63px 14px rgba(0,0,0,0.75);
+        border: #2A2B2A;
+        border-style: solid;
+        border-radius: 1.5em 1.5em 0em 0em;
+        padding: 1em;
+        width: 80%;
+        border-color: $secundary-color;
+        color: $text-color;
+        background-color: $terciary_color;
+        margin: 1em;
+        font-size: 1.2em;
+        height: 10%;
+        &:hover
+        {
+            background-color: $secundary-color;
+        }
+    }
+    &__info
+        {
+            margin: 1em;
+            button 
+            {
+                color: $text-color;
+                background-color: $terciary_color;
+                border-color: $secundary-color;
+                border-style: solid;
+                border-radius: 0.5em;
+                padding: 0.3em;
+            }
+            &__planes
+            {
+                color: $text-color;
+                background-color: $terciary_color;
+                border-color: $secundary-color;
+                border-style: solid;
+                border-radius: 0.5em;
+                padding: 0.3em;
+            }
+    }
+    h1
+    {
+        color: $text-color;
+        font-size: 3em;
+    }
+    &__correo
+    {
+        label
+        {
+            margin: 1em;
+            font-weight: 900;
+            color: $text-color;
+        }
+        input
+        {
+            border-color:  $terciary_color;
+            padding: 0.5em;
+            width: 40%;
+            border-style: solid;
+            color: rgb(42,43,42);
+            background-color: $secundary-color;
+            border-radius: 1em;
+            &::placeholder
+            {
+                color: #B3AAAA;
+            }
+        }
+    }
+}
+@keyframes presentacion
+{
+    from{ font-size:2em;}
+    to{ font-size: 1.2em;}
+}
