@@ -30,6 +30,7 @@
 }
 .header_nav__menu__button {
   margin: 4em 4em 2em 4em;
+  text-decoration: none;
   color: #ebe6ea;
   text-align: center;
   background-color: #4c93bf;
@@ -37,13 +38,20 @@
   border-width: 0.3em;
   border-color: #2475a0;
   border-radius: 1em;
-  width: 15em;
+  width: 10em;
   height: 2.5em;
   transition: all 1s;
 }
 .header_nav__menu__button:hover {
+  color: #ebe6ea;
   background-color: #2475a0;
   zoom: 110%;
+}
+.header_nav__menu__button a {
+  text-decoration: none;
+}
+.header_nav__menu__button a:hover {
+  color: #ebe6ea;
 }
 .header__grid__hijo {
   display: flex;
@@ -60,6 +68,13 @@
 }
 .header__grid__hijo a {
   color: #ebe6ea;
+}
+
+.inpage {
+  background-color: #2475a0;
+}
+.inpage:hover {
+  zoom: 100%;
 }
 
 .body__grid__padre {
@@ -135,7 +150,6 @@
   padding: 0.5em;
 }
 .main__vid {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -180,12 +194,13 @@
   padding: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
-  background-color: #4c93bf;
   text-align: center;
+  background-color: #4c93bf;
   line-height: 2em;
   color: #ebe6ea;
   font-weight: 600;
   font-size: 1.2em;
+  padding: 2em;
 }
 .main__planes ul:hover {
   zoom: 110%;
@@ -222,6 +237,8 @@
 .main__aboutus__articulo h2 {
   display: block;
   text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
   padding-top: 4em;
   color: #ebe6ea;
   font-size: 3em;
@@ -229,7 +246,7 @@
 .main__aboutus__articulo p {
   display: block;
   padding: 5em;
-  padding-top: 13em;
+  padding-top: 5em;
   font-size: 1.5em;
   text-align: center;
   font-family: "Oswald", sans-serif;
@@ -258,6 +275,8 @@
   margin: 1em;
   font-size: 1.2em;
   height: 10%;
+  min-height: 200px;
+  max-height: 600px;
 }
 .formulario__texto:hover {
   background-color: #2475a0;
@@ -285,6 +304,11 @@
   color: #ebe6ea;
   font-size: 3em;
 }
+.formulario__correo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .formulario__correo label {
   margin: 1em;
   font-weight: 900;
@@ -311,6 +335,15 @@
     font-size: 1.2em;
   }
 }
+.mapouter {
+  height: 225px;
+  width: 310px;
+}
+
+.carousel-item img {
+  height: 800px;
+}
+
 .footer__grid__hijo {
   display: flex;
   flex-wrap: wrap;
@@ -346,7 +379,7 @@
   border-style: solid;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .footer__grid__hijo {
     flex-direction: column;
   }
@@ -357,8 +390,11 @@
     border-color: #2475a0;
     border-top-style: solid;
   }
-  .header__nav__menu__button {
-    width: 40em;
+  .header__nav_nav__menu__button {
+    margin: 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 50em;
     height: 4em;
   }
   .header__grid__hijo h1 {
@@ -417,8 +453,11 @@
   .main__article h2 {
     font-size: 1.2em;
   }
-  .main iframe {
-    height: 200px;
+  .footer__datos {
+    padding: 16px;
+  }
+  .carousel-item img {
+    height: 300px;
   }
 }
 

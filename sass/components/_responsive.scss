@@ -1,4 +1,4 @@
-@media (max-width: 1024px) /* tablet */ {
+@media (max-width: 1200px) /* tablet */ {
     .footer
     {
         &__grid__hijo
@@ -15,11 +15,14 @@
             border-top: 1em;
             border-color: $secundary-color;
             border-top-style: solid;
-            &__menu__button
-            {
-                width: 40em;
-                height: 4em;
-            }
+         &_nav__menu__button
+        {
+            margin: 0;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            width: 50em;
+            height: 4em;
+        }
         }
         &__grid__hijo
         {
@@ -44,7 +47,7 @@
     {
         width: 90px;
         height: 90px;
-    }
+    }   
 }
 @media (max-width: 524px) /* Phone */
 {
@@ -104,6 +107,7 @@
             {
                 font-size: 1.2em;
             }
+            
         }
         &__article
         {
@@ -112,9 +116,19 @@
                 font-size: 1.2em;
             }
         }
-        iframe
+    }
+    .footer
+    {
+        &__datos
         {
-            height: 200px;
+            padding: 16px;
         }
     }
+    .carousel-item
+    {
+        img 
+        {
+            height: 300px;
+        }
+    } 
 }

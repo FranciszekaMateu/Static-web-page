@@ -17,6 +17,7 @@
     &_nav__menu__button
     {
         margin: 4em 4em 2em 4em;
+        text-decoration: none;
         color: $text-color;
         text-align: center;
         background-color: $terciary_color ;
@@ -24,13 +25,22 @@
         border-width: 0.3em;
         border-color: $secundary-color;
         border-radius: 1em;
-        width: 15em;
+        width: 10em;
         height: 2.5em;
         transition: all 1s;
         &:hover
         {
+            color: $text-color;
             background-color: $secundary-color;
             zoom: 110%;
+        }
+        a 
+        {
+            text-decoration: none;
+            &:hover
+            {
+                color: $text-color;
+            }
         }
     }
     &__grid__hijo
@@ -49,4 +59,14 @@
             color: $text-color;
         }
     }
+}
+
+.inpage
+{
+    background-color: $secundary-color;
+    &:hover
+    {
+        zoom: 100%;
+    }
+    
 }
