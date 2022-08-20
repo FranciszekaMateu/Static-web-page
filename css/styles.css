@@ -379,7 +379,7 @@
   border-style: solid;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .footer__grid__hijo {
     flex-direction: column;
   }
